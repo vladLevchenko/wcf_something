@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="a3f4ec4b-b743-40da-aa92-680aababaa2b" ChangeDateTime="04/29/2015 13:57:01">
+    <Property Name="ElementName" Value="[dbo].[Account].[Password]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Account]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PasswordHash" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f64383b0-d817-46d7-9ee1-ff8bd9bca84d" ChangeDateTime="04/29/2015 15:40:00">
+    <Property Name="ElementName" Value="[dbo].[FK_RoleTOAccount]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Account]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_RoleTAccount]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="12e21172-3830-43aa-9cbe-f554fcf8ad9c" ChangeDateTime="04/29/2015 15:40:06">
+    <Property Name="ElementName" Value="[dbo].[FK_RoleTAccount]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Account]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_RoleToAccount]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0a290c0e-178b-45ea-94e2-e1ce77bab808" ChangeDateTime="04/29/2015 15:41:15">
+    <Property Name="ElementName" Value="[dbo].[Role].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Role]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RoleId" />
+  </Operation>
+</Operations>
