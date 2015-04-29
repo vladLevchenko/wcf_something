@@ -28,4 +28,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="RoleId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="6b5b3caf-d41f-4a44-b344-987ddbceb4f3" ChangeDateTime="04/29/2015 15:59:21">
+    <Property Name="ElementName" Value="[dbo].[AK_Account_Column]" />
+    <Property Name="ElementType" Value="SqlUniqueConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Account]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[AK_Name]" />
+  </Operation>
 </Operations>
