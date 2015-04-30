@@ -16,6 +16,8 @@ namespace Parking
         DM.Account GetAccountInfo(Guid accountId);
         [OperationContract]
         IEnumerable<DM.Account> GetAllAccounts();
+        [OperationContract]
+        IEnumerable<DM.Account> GetAllAccountsSecure();
     }
 
    

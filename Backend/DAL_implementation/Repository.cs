@@ -25,7 +25,7 @@ namespace Backend.DAL_implementation
         {
             return _db;
         }
-
+       
         public T Create(T entity)
         {
             var createdEntity = _db.Add(entity);

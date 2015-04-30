@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using Backend;
+using System.Security.Permissions;
 using DM = DomainModel;
 using DAL = Backend.DAL_implementation;
 
@@ -30,6 +31,13 @@ namespace Parking
             var accountRepository = factory.GetRepository<Account>();
             var accounts = accountRepository.Get().ToList();
             return accounts.Select(acc => DM.Mappers.AccountMapper.FromDataModel(acc));
+        }
+
+
+        [PrincipalPermission(SecurityAction.Demand,Role="A")]
+        public IEnumerable<DM.Account> GetAllAccountsSecure()
+        {
+            throw new NotImplementedException();
         }
     }
 }
